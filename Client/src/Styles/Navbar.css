@@ -1,0 +1,14 @@
+.responsive_menu {
+  color: red;
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .HideIn500 {
+    display: none;
+  }
+  .responsive_menu {
+  color: red;
+  display: block;
+}
+}

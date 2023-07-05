@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../Assets/logo.png';
+import white_logo from "../Assets/white-logo.png"
 import { Link } from 'react-router-dom';
+import { CgMenuRound } from "react-icons/cg"
+import "../Styles/Navbar.css"
 
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -26,17 +29,20 @@ const Navbar = () => {
 
   return (
     <div className='flex items-center	justify-evenly p-5'>
-      <img src={logo} alt="logo" width={100} />
-      <div className='flex gap-24 border font-bold'>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/"}>About</Link>
-        <Link to={"/"}>Contact</Link>
-        <Link to={"/"}>
-          <button>Signup</button>
-        </Link>
+      <img src={isDarkMode ? white_logo : logo} alt="logo" width={100} />
+      <div className='flex font-bold sm:gap-10 md:gap-12 lg:gap-24 HideIn500'>
+        <Link to={"/"} className='pt-3 hover:border-b-4 border-green-500 rounded-full'>Home</Link>
+        <Link to={"/"} className='pt-3 hover:border-b-4 border-green-500 rounded-full'>About</Link>
+        <Link to={"/"} className='pt-3 hover:border-b-4 border-green-500 rounded-full'>Contact</Link>
+        
+        <button className='p-3 bg-sky-500 rounded-full font-bold'>Signup/Login</button>
+        
       </div>
-      <button onClick={handleToggle}>{isDarkMode ? "Ligh Mode" : "Dark Mode "}</button>
+      <button onClick={handleToggle} className=' p-3 rounded-full bg-fuchsia-500 font-bold'>{isDarkMode ? "Light Mode" : "Dark Mode "}</button>
+
+      <CgMenuRound size={50} className='responsive_menu' />
     </div>
+    
   )
 }
 
