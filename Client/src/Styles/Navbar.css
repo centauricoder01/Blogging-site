@@ -3,12 +3,30 @@
   display: none;
 }
 
+.Showhideclass {
+  position: fixed;
+  width: 80%;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.showClass {
+  /* display: block; */
+  position: fixed;
+  width: 80%;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
 @media only screen and (max-width: 500px) {
   .HideIn500 {
     display: none;
   }
   .responsive_menu {
-  color: red;
-  display: block;
-}
+    color: red;
+    display: block;
+  }
 }
