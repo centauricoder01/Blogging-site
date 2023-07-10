@@ -4,6 +4,7 @@ const reqString = { type: String, required: true };
 
 const AuthSchema = mongoose.Schema(
   {
+    name : reqString, 
     username: reqString,
     email: reqString,
     role: reqString,

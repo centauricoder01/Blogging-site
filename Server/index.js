@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const { CheckHeader } = require("./Middleware/Checkheader");
 const { SignupUser } = require("./Controllers/Signup");
 const { LoginUser } = require("./Controllers/Login");
+const { addCourse } = require("./Controllers/Courses");
 
 // MIDDLEWARE START FROM HERE
 const app = express();
@@ -23,6 +24,7 @@ app.get("/", (req, res) => {
 app.use(CheckHeader);
 app.post("/signup", SignupUser);
 app.post("/login", LoginUser);
+app.post("/addcourse", addCourse)
 
 // DATABASE CONNECTION START FROM HERE
 mongoose
