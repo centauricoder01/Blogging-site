@@ -18,3 +18,10 @@
 <p>MongoDB</p>
 
 <h3>The website is in progress and soon it will be live to the audience...</h3>
+
+<h1>Logo</h1>
+<p>Light Mode</p>
+https://github.com/centauricoder01/Course-selling-site/assets/103047446/73fe7294-973c-412f-9b6c-fd7d13f2c015
+
+<p>Dark Mode</p>
+https://github.com/centauricoder01/Course-selling-site/assets/103047446/a0902f20-3303-4947-a88d-f565cce0b471
