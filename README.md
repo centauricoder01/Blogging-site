@@ -21,7 +21,7 @@
 
 <h1>Logo</h1>
 <p>Light Mode</p>
-https://github.com/centauricoder01/Course-selling-site/assets/103047446/73fe7294-973c-412f-9b6c-fd7d13f2c015
+![logo](https://github.com/centauricoder01/Course-selling-site/assets/103047446/620f4eda-deb3-40d0-aacb-65b001a9962a)
 
 <p>Dark Mode</p>
-https://github.com/centauricoder01/Course-selling-site/assets/103047446/a0902f20-3303-4947-a88d-f565cce0b471
+![white-logo](https://github.com/centauricoder01/Course-selling-site/assets/103047446/a6ae11f6-1d79-428d-b704-4af39eed5716)
