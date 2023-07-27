@@ -1,6 +1,8 @@
 const { courseModel } = require("../Models/Courses");
+import { Request, Response } from "express";
 
-async function addCourse(req, res) {
+
+async function addCourse(req:Request, res:Response) {
   try {
     
   } catch (error) {
@@ -8,4 +10,4 @@ async function addCourse(req, res) {
   }
 }
 
-module.exports = { addCourse };
+export { addCourse };

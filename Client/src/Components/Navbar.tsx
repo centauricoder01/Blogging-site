@@ -46,7 +46,7 @@ const Navbar = () => {
           <Link to={"/"} className='pt-3 hover:border-b-4 border-green-500 rounded-full'>About</Link>
           <Link to={"/"} className='pt-3 hover:border-b-4 border-green-500 rounded-full'>Contact</Link>
 
-          <button className='p-3 bg-sky-500 rounded-full font-bold'>Signup/Login</button>
+          <Link to={"/signup"}><button className='p-3 bg-sky-500 rounded-full font-bold'>Signup/Login</button></Link>
 
         </div>
         <button onClick={handleToggle} className='p-3 rounded-full bg-fuchsia-500 font-bold'>{isDarkMode ? "Light Mode" : "Dark Mode "}</button>

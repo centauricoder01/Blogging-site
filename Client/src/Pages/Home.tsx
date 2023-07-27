@@ -5,8 +5,8 @@ const Home = () => {
     <>
       <Navbar />
       <div>
-        <h1 className='w-4/5 m-auto text-8xl mt-16 text-center font-black'>
-          Shaping a world with reimagination.
+        <h1 className='w-4/5 m-auto text-6xl mt-16 text-center font-black'>
+          Shaping a world's Knowledge with unimagination Courses.
         </h1>
         <p className='w-3/5 m-auto text-center mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis doloribus molestias rem error minus laborum architecto, nesciunt in corporis saepe unde tenetur a soluta, beatae dolor doloremque quae officia dicta.</p>
         <div className='flex items-center	justify-center mt-10 gap-5'>

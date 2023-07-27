@@ -1,8 +1,8 @@
-const mongoose = require("mongoose");
+import mongoose  from "mongoose";
 
 const reqString = { type: String, required: true };
 
-const AuthSchema = mongoose.Schema(
+const AuthSchema =new mongoose.Schema(
   {
     name : reqString, 
     username: reqString,
@@ -18,4 +18,4 @@ const AuthSchema = mongoose.Schema(
 
 const AuthModel = mongoose.model("Users", AuthSchema);
 
-module.exports = { AuthModel };
+export { AuthModel };

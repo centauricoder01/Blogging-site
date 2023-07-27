@@ -1,15 +1,15 @@
-const express = require("express");
-const cors = require("cors");
-const mongoose = require("mongoose");
+import express from "express";
+import cors  from "cors";
+import mongoose  from "mongoose";
 
 // ENDPOINT CONTROLLER ARE IMPORT HERE
-const { CheckHeader } = require("./Middleware/Checkheader");
-const { SignupUser } = require("./Controllers/Signup");
-const { LoginUser } = require("./Controllers/Login");
-const { addCourse } = require("./Controllers/Courses");
+import { CheckHeader }  from "./Middleware/Checkheader";
+import { SignupUser }  from "./Controllers/Signup";
+import { LoginUser }  from "./Controllers/Login";
+import { addCourse }  from "./Controllers/Courses";
 
 // MIDDLEWARE START FROM HERE
-const app = express();
+const app = express()
 require("dotenv").config();
 app.use(cors());
 app.use(express.json());
@@ -27,8 +27,11 @@ app.post("/login", LoginUser);
 app.post("/addcourse", addCourse)
 
 // DATABASE CONNECTION START FROM HERE
+
+const mongoURL: string = process.env.MONGO_URL || "Default_URl";
+
 mongoose
-  .connect(process.env.MONGO_URL, {})
+  .connect(mongoURL, {})
   .then(() => {
     console.log("DB Connetion Successfull");
   })

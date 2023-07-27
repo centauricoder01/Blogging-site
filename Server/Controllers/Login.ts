@@ -1,6 +1,8 @@
 const { AuthModel } = require("../Models/Signup");
+import { Request, Response } from "express";
 
-async function LoginUser(req, res) {
+
+async function LoginUser(req:Request, res:Response) {
   try {
     const { username, email, password } = req.body;
 
@@ -30,4 +32,4 @@ async function LoginUser(req, res) {
   }
 }
 
-module.exports = { LoginUser };
+export { LoginUser };

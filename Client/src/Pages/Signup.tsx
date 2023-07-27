@@ -37,12 +37,12 @@ const Signup = () => {
     <div>
       <Navbar />
       <section className=" body-font relative ">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-12">
+        <div className="container px-5 py-24 mx-auto ">
+          <div className="flex flex-col text-center w-full mb-5">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 ">Create an Account </h1>
           </div>
-          <div className="lg:w-1/2 md:w-4/5 mx-auto sm:w-full">
-            <div className="flex flex-col	justify-center items-center -m-2">
+          <div className="lg:w-1/2 md:w-4/5 mx-auto sm:w-full border">
+            <div className="flex flex-col	justify-center items-center">
               <div className="p-2 w-1/2">
                 <div className="relative">
                   <label className="leading-7 text-sm ">Name</label>
@@ -74,8 +74,9 @@ const Signup = () => {
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button onClick={handleSubmit} className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Login</button>
+                <button onClick={handleSubmit} className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Signup</button>
               </div>
+              <p className='mt-4'>Already Have an <strong>Account</strong></p>
             </div>
           </div>
         </div>

@@ -1,4 +1,6 @@
-function CheckHeader(req, res, next) {
+import { Request, Response, NextFunction } from "express";
+
+function CheckHeader(req:Request, res:Response, next:NextFunction) {
   const HEADER = req.headers;
 
   if (HEADER.header != process.env.HEADER) {
@@ -9,4 +11,4 @@ function CheckHeader(req, res, next) {
   next();
 }
 
-module.exports = { CheckHeader };
+export { CheckHeader };
